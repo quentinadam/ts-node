@@ -1,6 +1,6 @@
 {
   "name": "@quentinadam/tsc-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript execution for node.js, that will build the project and run the compiled javascript files",
   "author": "Quentin Adam",
   "license": "MIT",
