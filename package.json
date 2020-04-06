@@ -1,0 +1,29 @@
+{
+  "name": "@quentinadam/tsc-node",
+  "version": "1.0.0",
+  "description": "TypeScript execution for node.js, that will build the project and run the compiled javascript files",
+  "author": "Quentin Adam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quentinadam/tsc-node.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "tsc-node": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "prettier": "prettier --write ./src",
+    "test": "echo \"Error: no test specified\""
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.0",
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.6"
+  }
+}
