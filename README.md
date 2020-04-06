@@ -7,17 +7,26 @@
 
 ## Installation
 
-```
-# Install locally.
-npm install -D @quentinadam/tsc-node
+Local installation:
 
-# Install globally.
+```
+npm install -D @quentinadam/tsc-node
+```
+
+Global installation:
+```
 npm install -g @quentinadam/tsc-node
 ```
 
 ## Usage
 
+Executing a script with `tsc-node` will be equivalent to running `tsc -b` in the current directory to compile the whole TypeScript project (works with project references) and running the compiled `.js` file with `node`.
+
 ```
-# Will be equivalent to running `tsc -b` in the current directory to compile the script and running the corresponding .js file with `node`.
 tsc-node script.ts
+```
+
+The handler can also be registered to the node binary.
+```
+node -r @quentinadam/tsc-node script.ts
 ```
